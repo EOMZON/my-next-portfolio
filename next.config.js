@@ -4,6 +4,7 @@ const nextConfig = {
 
   // Add basePath
   basePath: '/my-next-portfolio',
+  output: 'export',
 };
 
 module.exports = nextConfig;
