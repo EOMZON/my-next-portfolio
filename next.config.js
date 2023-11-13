@@ -2,15 +2,11 @@
  * @type {import('next').NextConfig}
  */
 
-const repo = 'change-me-to-your-repo';
-const assetPrefix = `/${repo}/`;
-const basePath = `/${repo}`;
-
 const nextConfig = {
-  output: 'export',
-
-  assetPrefix: assetPrefix,
-  basePath: basePath,
+  generateBuildId: async () => {
+    return 'build';
+  },
+  distDir: 'out',
 };
 
 module.exports = nextConfig;
