@@ -1,12 +1,9 @@
-/**
- * @type {import('next').NextConfig}
- */
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  generateBuildId: async () => {
-    return 'build';
-  },
-  distDir: 'out',
+  reactStrictMode: true,
+
+  // Add basePath
+  basePath: '/github-pages',
 };
 
 module.exports = nextConfig;
